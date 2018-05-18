@@ -1,5 +1,5 @@
 body {
-    font-family: 'Space Mono', monospace;;
+    font-family: 'Space Mono', monospace;
     font-weight: bold;
     text-align: left;
 }
@@ -13,6 +13,10 @@ p {
     color: #888888;
     font-size: small;
     font-weight: normal;
+}
+
+@media print{
+       a:after{content:" [" attr(href) "]";}
 }
 
 a:visited {
@@ -42,4 +46,8 @@ ul {
    list-style: none;
    padding: 0;
    font-size: smaller;
+}
+
+ul li:before {
+   content: "> ";
 }
